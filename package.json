@@ -1,0 +1,20 @@
+{
+  "name": "protos-stimulus",
+  "version": "0.0.1",
+  "description": "Stimulus controllers for Protos",
+  "main": "index.js",
+  "repository": "https://github.com/inhouse-work/protos-stimulus",
+  "author": "Nolan Tait",
+  "license": "MIT",
+  "keywords": [
+    "Protos",
+    "Stimulus",
+    "StimulusJS",
+    "Ruby",
+    "Rails"
+  ],
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "fuse.js": "^7.0.0"
+  }
+}
