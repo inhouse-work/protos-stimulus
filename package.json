@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
-    "fuse.js": "^7.0.0"
+    "fuse.js": "^7.0.0",
+    "tippy.js": "^6.3.7"
   }
 }
