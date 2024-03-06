@@ -3,7 +3,10 @@
   "version": "0.0.2",
   "description": "Stimulus controllers for Protos",
   "main": "index.js",
-  "repository": "https://github.com/inhouse-work/protos-stimulus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inhouse-work/protos-stimulus.git"
+  },
   "author": "Nolan Tait",
   "license": "MIT",
   "keywords": [
