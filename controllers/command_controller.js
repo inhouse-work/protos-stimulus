@@ -23,9 +23,7 @@ export default class extends Controller {
     this._toggleVisibility(this.itemTargets, false)
 
     const results = this.search.search(query)
-    results.forEach((result) => {
-      this._toggleVisibility([result.item], true)
-    })
+    results.forEach(result => {this._toggleVisibility([result.item], true)})
 
     if (this.hasEmptyTarget) {
       this._toggleVisibility(this.emptyTargets, results.length === 0)
