@@ -1,4 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
+import { hideOthers } from "aria-hidden"
 
 export default class extends Controller {
   static targets = [ "modal" ]
@@ -7,6 +8,8 @@ export default class extends Controller {
   }
 
   connect() {
+    this.undo = () => {}
+
     if (this.openValue) {
       this.open()
     }
@@ -15,11 +18,13 @@ export default class extends Controller {
   close() {
     this.modalTarget.classList.remove("modal-open")
     this.modalTarget.close()
+    this.undo()
   }
 
   open() {
     this.modalTarget.classList.add("modal-open")
     this.modalTarget.showModal()
+    this.undo = hideOthers(this.modalTarget)
   }
 
   handleFormSubmit(event) {
