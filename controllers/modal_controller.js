@@ -1,30 +1,27 @@
-import { Controller } from "@hotwired/stimulus"
 import { hideOthers } from "aria-hidden"
+import Dialog from "@stimulus-components/dialog"
 
-export default class extends Controller {
-  static targets = [ "modal" ]
-  static values = {
-    open: { type: Boolean, default: false }
-  }
-
+export default class extends Dialog {
   connect() {
     this.undo = () => {}
 
     if (this.openValue) {
       this.open()
     }
+
+    super.connect()
   }
 
   close() {
-    this.modalTarget.classList.remove("modal-open")
-    this.modalTarget.close()
+    this.dialogTarget.classList.remove("modal-open")
     this.undo()
+    super.close()
   }
 
   open() {
-    this.modalTarget.classList.add("modal-open")
-    this.modalTarget.showModal()
-    this.undo = hideOthers(this.modalTarget)
+    this.dialogTarget.classList.add("modal-open")
+    this.undo = hideOthers(this.dialogTarget)
+    super.open()
   }
 
   handleFormSubmit(event) {

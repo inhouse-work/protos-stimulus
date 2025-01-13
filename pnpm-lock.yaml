@@ -11,6 +11,9 @@ importers:
       '@hotwired/stimulus':
         specifier: ^3.2.2
         version: 3.2.2
+      '@stimulus-components/dialog':
+        specifier: ^1.0.1
+        version: 1.0.1(@hotwired/stimulus@3.2.2)
       aria-hidden:
         specifier: ^1.2.4
         version: 1.2.4
@@ -28,6 +31,11 @@ packages:
 
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+
+  '@stimulus-components/dialog@1.0.1':
+    resolution: {integrity: sha512-7cpazrXeFKVmmuGnJOrykEvjRNRTOhLuI7SzgDdAlKWxM8ivBKziBHwjJGR96vCvSkoKwlGMGRcDzXgVRnr/7w==}
+    peerDependencies:
+      '@hotwired/stimulus': ^3.0.0
 
   aria-hidden@1.2.4:
     resolution: {integrity: sha512-y+CcFFwelSXpLZk/7fMB2mUbGtX9lKycf1MWJ7CaTIERyitVlyQx6C+sxcROU2BAJ24OiZyK+8wj2i8AlBoS3A==}
@@ -48,6 +56,10 @@ snapshots:
   '@hotwired/stimulus@3.2.2': {}
 
   '@popperjs/core@2.11.8': {}
+
+  '@stimulus-components/dialog@1.0.1(@hotwired/stimulus@3.2.2)':
+    dependencies:
+      '@hotwired/stimulus': 3.2.2
 
   aria-hidden@1.2.4:
     dependencies:
