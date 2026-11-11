@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Stimulus controllers for Protos",
   "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/inhouse-work/protos-stimulus.git"
@@ -22,8 +25,10 @@
     "aria-hidden": "^1.2.6",
     "fuse.js": "^7.5.0",
     "hotkeys-js": "^4.1.2",
-    "protos-stimulus": "link:",
     "tippy.js": "^6.3.7"
   },
-  "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3"
+  "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3",
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  }
 }

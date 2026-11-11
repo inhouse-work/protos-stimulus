@@ -2,13 +2,13 @@ import { Controller } from "@hotwired/stimulus"
 import Fuse from "fuse.js"
 
 export default class extends Controller {
-  static targets = [ "item", "empty" ]
+  static targets = ["item", "empty"]
 
   connect() {
     this.search = new Fuse(this.itemTargets, {
       keys: ["textContent"],
       threshold: 0.2,
-      includeMatches: true
+      includeMatches: true,
     })
   }
 
@@ -23,7 +23,9 @@ export default class extends Controller {
     this._toggleVisibility(this.itemTargets, false)
 
     const results = this.search.search(query)
-    results.forEach(result => {this._toggleVisibility([result.item], true)})
+    results.forEach((result) => {
+      this._toggleVisibility([result.item], true)
+    })
 
     if (this.hasEmptyTarget) {
       this._toggleVisibility(this.emptyTargets, results.length === 0)
@@ -36,6 +38,6 @@ export default class extends Controller {
   }
 
   _toggleVisibility(elements, visible) {
-    elements.forEach(element => element.classList.toggle("hidden", !visible))
+    elements.forEach((element) => element.classList.toggle("hidden", !visible))
   }
 }

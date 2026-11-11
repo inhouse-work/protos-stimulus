@@ -11,7 +11,6 @@ application.register("protos--modal", ModalController)
 application.register("protos--command", CommandController)
 application.register("protos--popover", PopoverController)
 
-
 // Export all controllers so user of npm package can lazy load controllers
 export { default as ModalController } from "./controllers/modal_controller"
 export { default as CommandController } from "./controllers/command_controller"
