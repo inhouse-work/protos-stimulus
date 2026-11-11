@@ -163,7 +163,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  protos-stimulus: 'link:'
+  protos-stimulus: link:.
 
 importers:
 
