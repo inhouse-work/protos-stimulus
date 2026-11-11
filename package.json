@@ -20,9 +20,10 @@
     "@hotwired/stimulus": "^3.2.2",
     "@stimulus-components/dialog": "^1.0.1",
     "aria-hidden": "^1.2.6",
-    "fuse.js": "^7.1.0",
-    "hotkeys-js": "^3.13.15",
+    "fuse.js": "^7.5.0",
+    "hotkeys-js": "^4.1.2",
+    "protos-stimulus": "link:",
     "tippy.js": "^6.3.7"
   },
-  "packageManager": "pnpm@10.15.0+sha512.486ebc259d3e999a4e8691ce03b5cac4a71cbeca39372a9b762cb500cfdf0873e2cb16abe3d951b1ee2cf012503f027b98b6584e4df22524e0c7450d9ec7aa7b"
+  "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3"
 }
