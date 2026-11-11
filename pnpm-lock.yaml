@@ -198,22 +198,20 @@ snapshots:
       "@pnpm/exe.win32-x64": 12.18.0
 
 ---
-lockfileVersion: "9.0"
+lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  protos-stimulus: link:.
-
 importers:
+
   .:
     dependencies:
-      "@hotwired/stimulus":
+      '@hotwired/stimulus':
         specifier: ^3.2.2
         version: 3.2.2
-      "@stimulus-components/dialog":
+      '@stimulus-components/dialog':
         specifier: ^1.0.1
         version: 1.0.1(@hotwired/stimulus@3.2.2)
       aria-hidden:
@@ -234,74 +232,49 @@ importers:
         version: 3.9.10
 
 packages:
-  "@hotwired/stimulus@3.2.2":
-    resolution:
-      {
-        integrity: sha512-eGeIqNOQpXoPAIP7tC1+1Yc1yl1xnwYqg+3mzqxyrbE5pg5YFBZcA6YoTiByJB6DKAEsiWtl6tjTJS4IYtbB7A==,
-      }
 
-  "@popperjs/core@2.11.8":
-    resolution:
-      {
-        integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==,
-      }
+  '@hotwired/stimulus@3.2.2':
+    resolution: {integrity: sha512-eGeIqNOQpXoPAIP7tC1+1Yc1yl1xnwYqg+3mzqxyrbE5pg5YFBZcA6YoTiByJB6DKAEsiWtl6tjTJS4IYtbB7A==}
 
-  "@stimulus-components/dialog@1.0.1":
-    resolution:
-      {
-        integrity: sha512-7cpazrXeFKVmmuGnJOrykEvjRNRTOhLuI7SzgDdAlKWxM8ivBKziBHwjJGR96vCvSkoKwlGMGRcDzXgVRnr/7w==,
-      }
+  '@popperjs/core@2.11.8':
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+
+  '@stimulus-components/dialog@1.0.1':
+    resolution: {integrity: sha512-7cpazrXeFKVmmuGnJOrykEvjRNRTOhLuI7SzgDdAlKWxM8ivBKziBHwjJGR96vCvSkoKwlGMGRcDzXgVRnr/7w==}
     peerDependencies:
-      "@hotwired/stimulus": ^3.0.0
+      '@hotwired/stimulus': ^3.0.0
 
   aria-hidden@1.2.6:
-    resolution:
-      {
-        integrity: sha512-ik3ZgC9dY/lYVVM++OISsaYDeg1tb0VtP5uL3ouh1koGOaUMDPpbFIei4JkFimWUFPn90sbMNMXQAIVOlnYKJA==,
-      }
-    engines: { node: ">=10" }
+    resolution: {integrity: sha512-ik3ZgC9dY/lYVVM++OISsaYDeg1tb0VtP5uL3ouh1koGOaUMDPpbFIei4JkFimWUFPn90sbMNMXQAIVOlnYKJA==}
+    engines: {node: '>=10'}
 
   fuse.js@7.5.0:
-    resolution:
-      {
-        integrity: sha512-sQtrEfA+ez/3G0cCZecF70oqpCRttCexYUG4mUrtWL49ULUzUyxokt5kyqwtKzj1270RaKih+hcP3qLcumccow==,
-      }
-    engines: { node: ">=10" }
+    resolution: {integrity: sha512-sQtrEfA+ez/3G0cCZecF70oqpCRttCexYUG4mUrtWL49ULUzUyxokt5kyqwtKzj1270RaKih+hcP3qLcumccow==}
+    engines: {node: '>=10'}
 
   hotkeys-js@4.1.2:
-    resolution:
-      {
-        integrity: sha512-SXPG2KJ4AW0wyZwh7lBtBavfbunm78kcTqjc2b7TXe7bkyKwDJDlByXbMoGiNrhRkONfdzNg6KqRc3PKBj6tfQ==,
-      }
+    resolution: {integrity: sha512-SXPG2KJ4AW0wyZwh7lBtBavfbunm78kcTqjc2b7TXe7bkyKwDJDlByXbMoGiNrhRkONfdzNg6KqRc3PKBj6tfQ==}
 
   prettier@3.9.10:
-    resolution:
-      {
-        integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==,
-      }
-    engines: { node: ">=14" }
+    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
+    engines: {node: '>=14'}
     hasBin: true
 
   tippy.js@6.3.7:
-    resolution:
-      {
-        integrity: sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==,
-      }
+    resolution: {integrity: sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==}
 
   tslib@2.8.1:
-    resolution:
-      {
-        integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==,
-      }
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
 snapshots:
-  "@hotwired/stimulus@3.2.2": {}
 
-  "@popperjs/core@2.11.8": {}
+  '@hotwired/stimulus@3.2.2': {}
 
-  "@stimulus-components/dialog@1.0.1(@hotwired/stimulus@3.2.2)":
+  '@popperjs/core@2.11.8': {}
+
+  '@stimulus-components/dialog@1.0.1(@hotwired/stimulus@3.2.2)':
     dependencies:
-      "@hotwired/stimulus": 3.2.2
+      '@hotwired/stimulus': 3.2.2
 
   aria-hidden@1.2.6:
     dependencies:
@@ -315,6 +288,6 @@ snapshots:
 
   tippy.js@6.3.7:
     dependencies:
-      "@popperjs/core": 2.11.8
+      '@popperjs/core': 2.11.8
 
   tslib@2.8.1: {}
