@@ -8,6 +8,7 @@ export default class extends Controller {
       type: Object,
       default: {},
     },
+    opened: Boolean
   }
 
   connect() {
@@ -25,6 +26,10 @@ export default class extends Controller {
     const merged = { ...options, ...this.optionsValue }
 
     this.tippy = tippy(this.triggerTarget, merged)
+
+    if (this.openedValue) {
+      this.open()
+    }
   }
 
   disconnect() {
